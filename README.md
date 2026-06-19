@@ -1,6 +1,6 @@
-# AdhyaAura Jewels | Luxury Jewelry E-Commerce Redesign
+# AdhyAura Jewels | Luxury Jewelry E-Commerce Redesign
 
-A premium, production-level e-commerce application for **AdhyaAura Jewels** built using **React (Vite)** and **Tailwind CSS**. 
+A premium, production-level e-commerce application for **AdhyAura Jewels** built using **React (Vite)** and **Tailwind CSS**. 
 
 ---
 
