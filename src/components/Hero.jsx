@@ -4,7 +4,7 @@ import logo from '../logo.png';
 
 const slides = [
   {
-    tagline: "The Heritage of Purity",
+    tagline: "The Heritage of Purity and Energy",
     title: "AdhyAura",
     accent: "Royal Collection",
     description: "Handcrafted jewelry that makes you pure and keeps you energized. Where the deep-rooted richness of Indian legacy blends into standard, modern luxury.",
