@@ -1,3 +1,10 @@
+import {Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import Admin from './pages/Admin';
+
+
 import React from 'react';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header';
@@ -20,21 +27,18 @@ export default function App() {
       <div className="relative min-h-screen flex flex-col">
         {/* Navigation Header */}
         <Header />
-
-        {/* Main Content Areas */}
-        <main className="flex-grow">
-          {/* Hero Banner */}
-          <Hero />
-          
-          {/* About us narrative */}
-          <About />
-          
-          {/* Product list with search and filters */}
-          <ProductCatalog />
-          
-          {/* Feedback and information details */}
-          <ContactForm />
-        </main>
+        {/* Main content Area */}
+         <main className="flex-grow">
+           <Routes>
+               <Route path="/" element={<Home />} />
+               <Route path="/home" element={<Home />} />
+               <Route path="/login" element={<Login />} />
+               <Route path="/profile" element={<Profile />} />
+               <Route path="/admin" element={<Admin />} />
+           </Routes>
+         </main>
+        
+          {/* hero section*/}
 
         {/* Footer info details */}
         <Footer />

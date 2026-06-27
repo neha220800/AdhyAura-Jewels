@@ -169,7 +169,7 @@ const initialProducts = [
 ];
 
 export const AppProvider = ({ children }) => {
-  const [products] = useState(initialProducts);
+  const [products,setProducts] = useState(initialProducts);
   
   // Cart State (Persisted in LocalStorage)
   const [cart, setCart] = useState(() => {
@@ -299,6 +299,7 @@ export const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         products: sortedProducts,
+        setProducts,
         allProductsRaw: products,
         cart,
         wishlist,

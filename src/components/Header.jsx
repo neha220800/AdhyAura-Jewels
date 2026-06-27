@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { Heart, ShoppingBag, Menu, X, User } from 'lucide-react';
 import logo from '../logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const { 
@@ -31,9 +32,9 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
+    { label: 'Home', href: '/Home' },
     { label: 'About us', href: '#about' },
-    { label: 'Products', href: '#product' },
+    { label: 'Products', href: '#products' },
     { label: 'Contact', href: '#contact' }
   ];
 
