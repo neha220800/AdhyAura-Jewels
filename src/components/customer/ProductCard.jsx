@@ -1,5 +1,5 @@
 import React from 'react';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../../context/AppContext';
 import { Heart, ShoppingBag, Eye, Star } from 'lucide-react';
 
 export default function ProductCard({ product }) {

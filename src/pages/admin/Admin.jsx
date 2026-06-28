@@ -1,9 +1,18 @@
 import React, {useState} from 'react';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../../context/AppContext';
 export default function Admin() {
    const { products, setProducts } = useApp();
   const [productName, setProductName] = useState("");
   const[price, setPrice]= useState("");
+  const [editingProduct, setEditingProduct] = useState(null);
+
+  const handleEdit = (product) => {
+  setEditingProduct(product);
+
+  setProductName(product.name);
+  setPrice(product.price);
+};
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -48,6 +57,7 @@ setProducts([...products, newProduct]);
          <p className="text-2xl font-bold">₹0</p>
       </div>
      </div>
+  
         <form
         onSubmit={handleSubmit}
            className="bg-white shadow-md rounded-lg p-6"
@@ -95,6 +105,17 @@ setProducts([...products, newProduct]);
       <h3>{product.name}</h3>
       <p>₹ {product.price}</p>
     </div>
+
+   
+
+    <button
+      onClick={() => handleEdit(product)}
+      className="bg-blue-500 text-white px-3 py-1 rounded mr-2 hover:bg-blue-600"
+    >
+      Edit
+    </button>
+
+
 
     <button
       onClick={() =>

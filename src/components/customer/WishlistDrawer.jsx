@@ -1,5 +1,5 @@
 import React from 'react';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../../context/AppContext';
 import { X, Heart, ShoppingBag, Trash2 } from 'lucide-react';
 
 export default function WishlistDrawer() {

@@ -1,25 +1,25 @@
 import {Routes,Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Profile from './pages/Profile';
-import Admin from './pages/Admin';
+import Home from './pages/customer/Home';
+import Login from './pages/customer/Login';
+import Profile from './pages/customer/Profile';
+import Admin from './pages/admin/Admin';
 
 
 import React from 'react';
 import { AppProvider } from './context/AppContext';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import ProductCatalog from './components/ProductCatalog';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
+import Header from './components/layout/Header';
+import Hero from './components/layout/Hero';
+import About from './components/layout/About';
+import ProductCatalog from './components/customer/ProductCatalog';
+import ContactForm from './components/layout/ContactForm';
+import Footer from './components/layout/Footer';
 
 // Interactive Overlays
-import CartDrawer from './components/CartDrawer';
-import WishlistDrawer from './components/WishlistDrawer';
-import ProductModal from './components/ProductModal';
-import CheckoutModal from './components/CheckoutModal';
-import LoginModal from './components/LoginModal';
+import CartDrawer from './components/customer/CartDrawer';
+import WishlistDrawer from './components/customer/WishlistDrawer';
+import ProductModal from './components/customer/ProductModal';
+import CheckoutModal from './components/customer/CheckoutModal';
+import LoginModal from './components/customer/LoginModal';
 
 export default function App() {
   return (

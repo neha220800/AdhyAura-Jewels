@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Compass } from 'lucide-react';
-import logo from '../logo.png';
+import logo from '../../logo.png';
 
 export default function Footer() {
   const quickLinks = [

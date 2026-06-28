@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../../context/AppContext';
 import { X, Lock, CheckCircle2, ShieldCheck, Loader2 } from 'lucide-react';
 
 export default function CheckoutModal() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useApp } from '../context/AppContext';
+import { useApp } from '../../context/AppContext';
 import { X, Star, ShoppingBag, Heart, ShieldCheck, Truck } from 'lucide-react';
 
 export default function ProductModal() {
